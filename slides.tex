@@ -318,13 +318,35 @@ it, obtain a small amount of very precious material (model with valuable use)
 
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Machine Learning within AI}
+
+\begin{center}
+\begin{tabular}{ll}
+\hline
+Human ability & AI area \\
+\hline\hline
+Seeing & Computer Vision \\
+Talking & Speech systhesis \\
+Listening & Speech recognition \\
+Understanding Language &  Natural Language Processing \\
+Reasoning & Automated reasoning \\
+Consciousness & Philosophy / Cognitive Science \\
+Moving around & Robotics \\
+Learning & \textbf{Machine Learning}\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Knowledge Discovery in Databases}
+\subsection{Data Mining / Knowledge Discovery in Databases}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{What is Knowledge Discovery in Databases?}
+\begin{frame}{What is Data Mining / Knowledge Discovery in Databases?}
 
 % \begin{itemize}
 %   \item KDD is the automatic extraction of non-obvious, hidden knowledge from large volumes of data
@@ -472,9 +494,9 @@ Deep learning
 
 \begin{itemize}
  \item Data integration, Selection, cleaning and transformation of data
- \item Machine Learning (patterns)., classifiers, rules, etc
+ \item Machine Learning (patterns), classifiers, rules, etc
  \item Evaluation and interpretation
- \item Decision making (knowledge)
+ \item Decision making (making use of the knowledge)
 \end{itemize}
 
 \begin{center}
@@ -534,6 +556,15 @@ different aspects of the instance.
 There are also semi-supervised approaches: goal is classification but the input contains both unlabeled and labeled data.
 
 Subgroup Discovery approaches generate descriptive rules are also half way between descriptive and predictive techniques.
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Supervised Classification}
+
+\begin{center}
+\includegraphics[width=.6\textwidth]{figs/supervisedClassification}
+\end{center}
 
 \end{frame}
 
@@ -694,6 +725,8 @@ $(\mathbf{x}^{(N)}, C^{(N)})$ & $x^{(N)}_1$ & $\ldots$ & $x^{(N)}_n$ \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Evaluation of Supervised Models}
 
+
+
 \begin{itemize}
  \item Once we obtain the supervised model with the training data, we need to evaluate it with some new data (testing data)
  
@@ -776,37 +809,36 @@ The error estimates are averaged to yield an overall error estimate, i.e., havin
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}{Evaluation Metrics}
-
-\begin{itemize}
- \item Number of correct classifications:
-    $$\sum^N_{i=1} \delta(c^{(i)}, c^{(i)}_M)$$ where 
-    $\delta(c^{(i)}, c^{(i)}_M)=\{1 if c^{(i)}, c^{(i)}_M, 0 otherwise$
-
-  \item For probabilistic classifiers Brier score (1950)
-
-  $bs(\mathcal{D})=\frac{1}{N}\sum \sum...$
-
-  \item Many times we need to combine the TP and FP to estimate the goodness of a classifier. For example, with imbalanced data, the accuracy of a classifer needs to improve the percentage of the mayority class. In a binay problem and 50/50 distribution, we need improve accuracy over 50\%. However if the distribution is 90/10, accuracy needs to be over 90\%
-
-  \item f −measure is an harmonic median of these proportions:
-
-  \item And many many more!!
-\end{itemize}
-
-
-\end{frame}
+% \begin{frame}{Evaluation Metrics}
+% 
+% \begin{itemize}
+%  \item Number of correct classifications:
+%     $$\sum^N_{i=1} \delta(c^{(i)}, c^{(i)}_M)$$ where 
+%     $\delta(c^{(i)}, c^{(i)}_M)=\{1 if c^{(i)}, c^{(i)}_M, 0 otherwise$
+% 
+%   % \item For probabilistic classifiers Brier score (1950)
+%   % $bs(\mathcal{D})=\frac{1}{N}\sum \sum...$
+% 
+%   \item Many times we need to combine the TP and FP to estimate the goodness of a classifier. For example, with imbalanced data, the accuracy of a classifer needs to improve the percentage of the mayority class. In a binay problem and 50/50 distribution, we need improve accuracy over 50\%. However if the distribution is 90/10, accuracy needs to be over 90\%
+% 
+%   \item f −measure is an harmonic median of these proportions:
+% 
+%   \item And many many more!!
+% \end{itemize}
+% 
+% 
+% \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}{Graphical Evaluation}
-
-\begin{itemize}
-  \item AUC (Area under the ROC)
-
-  \item Precision Recall curve\end{itemize}
-\end{frame}
+% \begin{frame}{Graphical Evaluation}
+% 
+% \begin{itemize}
+%   \item AUC (Area under the ROC)
+% 
+%   \item Precision Recall curve\end{itemize}
+% \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
