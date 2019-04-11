@@ -324,7 +324,7 @@ it, obtain a small amount of very precious material (model with valuable use)
 \begin{center}
 \begin{tabular}{ll}
 \hline
-Human ability & AI area \\
+\textbf{Human ability} & \textbf{AI area} \\
 \hline\hline
 Seeing & Computer Vision \\
 Talking & Speech systhesis \\
@@ -428,7 +428,7 @@ Recommender systems
 
 
 \begin{center}
-\includegraphics[width=.9\textwidth,,keepaspectratio=true]{figs/autonomousCar}
+\includegraphics[width=.9\textwidth,keepaspectratio=true]{figs/autonomousCar}
 \end{center}
 
 \end{frame}
@@ -538,6 +538,9 @@ different aspects of the instance.
 
 
 \end{frame}
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -705,6 +708,35 @@ $(\mathbf{x}^{(N)}, C^{(N)})$ & $x^{(N)}_1$ & $\ldots$ & $x^{(N)}_n$ \\
 
 \begin{center}
 \includegraphics[width=.7\textwidth]{figs/associationRules}
+\end{center}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Feature Subset Selection}
+
+
+
+\begin{center}
+\begin{tabular}{ll}
+\includegraphics[width=.4\textwidth]{./figs/supervisedClassificationFSS} & 
+\end{tabular}
+\end{center}
+
+
+\begin{center}
+\scriptsize
+\begin{tabular}{lllllll|l}
+  $X_1$  & \color{red}$X_i$ & $\ldots$  & \color{red}$X_j$ & $X_n$ & $C_M$ \\
+  \hline
+  $x^{(1)}_1$ & $\color{red}x^{(1)}_i$ & $\ldots$ & $\color{red}x^{(1)}_j$ & $x^{(1)}_n$ & $C^{(1)}_M$ \\
+  $x^{(2)}_1$ & $\color{red}x^{(2)}_i$ & $\ldots$ & $\color{red}x^{(2)}_j$ & $x^{(2)}_n$ & $C^{(2)}_M$ \\
+ 		&  	&	$\ddots$	&  \\	
+  $x^{(N)}_1$ & $\color{red}x^{(N)}_i$ & $\ldots$ & $\color{red}x^{(N)}_j$ & $x^{(N)}_n$ & $C^{(N)}_M$ \\
+\hline
+% $(\mathbf{x}^{(N+1)}, C^{(N+1)})$ & $x^{(N+1)}_1$ & $\ldots$ & $x^{(N+1)}_n$ & $??$ \\
+\end{tabular}
 \end{center}
 
 \end{frame}
